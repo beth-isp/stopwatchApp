@@ -7,3 +7,7 @@ class Buttons {
     static let reset = app.buttons["Reset"]
     static let lap = app.buttons["Lap"]
 }
+
+func checkButton(button: String) -> XCUIElement {
+    app.buttons[button]
+}
